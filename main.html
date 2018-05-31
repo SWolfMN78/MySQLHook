@@ -6,16 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Link to my jQuery information -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Izimodal modal library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" integrity="sha384-twsqDCMYZktKK4KMv8cXDnLhBCVchPMuxLKKh1azoa3vn5nKRF/8PK4GmIgD0JaW" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js" integrity="sha384-OCBM5wbr9X4XRMO0UcgNtJrfDZz4bo4c6PDZrxVN8zLSn6/B0CKZ/RUBRDDVqgt4" crossorigin="anonymous" type="text/javascript"></script>
+
+
 </head>
 
 <body>
-    <div>
-        <form>
+    <div class="container">
+        <div class="nav justify-content-center ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
 
-        </form>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="iRegister">Regiser</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#" id="iLogIn">Log-In</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <div class="card-footer fixed-bottom text-center" id="footer">
+        <p> <em>Wolf# Designs</em> - © 2018 Random Dream-Ball. All rights reserved.</p>
+    </div>
+
+    <!--Modal Information-->
+    <div id="modal-custom-login" class="modal-custom">
+        <button data-iziModal-close class="icon-close">X</button>
+        <header>
+            <label>Please Login</label>
+        </header>
+        <div>
+            <section>
+                <!--User Information-->
+                <input type="text" for="login_email" placeholder="User Email" id="login_email">
+                <!--Get the user's password info-->
+                <input type="password" for="login-pass" placeholder="Password" id="login-pass">
+            </section>
+        </div>
+    </div>
+
+    <div id="modal-custom-signup" class="modal-custom">
+        <button data-iziModal-close class="icon-close">X</button>
+        <header>
+            <label id="header-custom-rules">Please Register!</label>
+        </header>
+        <div>
+            <section>
+                <!--Get the user's Password Info-->
+                <input type="email" placeholder="Username" id="user_email">
+                <!--Get the user's selected password-->
+                <input type="password" placeholder="Password - limit 10 characters" id="create_pass">
+                <!--Have the user confirm their password-->
+                <input type="password" placeholder="Retype Password" id="create_verify">
+                <label for="check"><input type="checkbox" name="checkbox" id="check" value="1"> I agree to the <u>Terms</u> of this game.</label>
+                <footer>
+                    <button data-iziModal-close id="header-custom-rules">Cancel</button>
+                    <button class="submit" id="custom-btnSignup">Create Account</button>
+                </footer>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- Local CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="assets/JavaScript/indexJS.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
