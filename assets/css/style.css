@@ -1,3 +1,129 @@
+/*Modal Infomation*/
+
+
+/*This will hide the html modal information*/
+
 .modal-custom {
     display: none;
+}
+
+.modal-custom header {
+    background: #eee;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+}
+
+.modal-custom header label {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: #ddd;
+    color: #999;
+    height: auto;
+    line-height: 45px;
+    font-family: 'Lato', arial;
+    font-size: 15px;
+}
+
+.modal-custom header a.active {
+    box-shadow: inset 0 -10px 20px -10px #aaa;
+    background: #fff;
+    color: #777;
+}
+
+.modal-custom section {
+    padding: 30px;
+}
+
+.modal-custom section input:not([type="checkbox"]),
+.modal-custom section button {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    margin-bottom: 26px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.modal-custom section button {
+    height: 46px;
+    padding: 0;
+}
+
+.modal-custom section input:focus {
+    border-color: #28CA97;
+}
+
+.modal-custom section label[for="check"] {
+    margin-bottom: 26px;
+    font-size: 14px;
+    color: #999;
+    display: block;
+}
+
+.modal-custom section footer {
+    overflow: hidden;
+}
+
+.modal-custom section button {
+    background: #28CA97;
+    color: white;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    width: 50%;
+    float: left;
+}
+
+.modal-custom section button:hover {
+    opacity: 0.8;
+}
+
+.modal-custom section button:nth-child(1) {
+    border-radius: 3px 0 0 3px;
+    background: #aaa;
+}
+
+.modal-custom section button:nth-child(2) {
+    border-radius: 0 3px 3px 0;
+}
+
+.modal-custom .icon-close {
+    background: #FFF;
+    margin-bottom: 10px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    color: #a9a9a9;
+    cursor: pointer;
+}
+
+.modal-custom .icon-close:hover,
+.modal-custom .icon-close:focus {
+    color: black;
+}
+
+.modal-custom.hasScroll .icon-close {
+    display: none;
+}
+
+.iziModal .iziModal-header-title {
+    font-family: 'Lato', arial;
+    font-weight: 500;
+}
+
+
+/********** modal style **************/
+
+#custom-btnColor1 {
+    background-color: #0682fc;
 }
